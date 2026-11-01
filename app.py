@@ -57,13 +57,13 @@ with right:
 
 
 if st.button("✨ Analyze my match", type="primary"):
-    api_key = os.getenv("GOOGLE_API_KEY")
+    api_key = os.getenv("GEMINI_API_KEY")
 
     if not resume.strip() or not job_description.strip():
         st.warning("Please paste both a resume and a job description.")
 
     elif not api_key or api_key == "your_api_key_here":
-        st.error("Add your real GOOGLE_API_KEY to your local .env file.")
+        st.error("Add your real GEMINI_API_KEY to your local .env file.")
 
     else:
         resume_excerpt = resume[:2000]
