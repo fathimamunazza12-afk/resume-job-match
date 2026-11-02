@@ -105,7 +105,7 @@ Note that this analysis uses partial excerpts and is not a hiring decision.
 
 
 
-                try:
+            try:
             with st.spinner("Asking Gemini to analyze the match..."):
                 client = genai.Client(
                     api_key=api_key,
